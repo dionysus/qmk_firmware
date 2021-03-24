@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   	_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                        KC_F6  , KC_F7  , KC_F8  , KC_F9  , KC_F10 , _______,
   	_______, _______, _______, _______, _______, _______,                        _______, _______, _______, _______, _______, _______,
   	_______, _______, _______, _______, _______, _______, _______,      _______, _______, _______, _______, _______, _______, _______,
-  	TOG_OS , _______, MODSDEF, _______, _______, _______, _______,      _______, _______, _______, _______, _______, _______, _______
+  	TOG_OS , _______, MODSDEF, _______, _______, _______, _______,      _______, _______, _______, _______, _______, _______, RGB_MOD
   ),
   // 	[BLANK] = LAYOUT_twins(
   // 	_______, _______, _______, _______, _______, _______,                        _______, _______, _______, _______, _______, _______,
@@ -327,4 +327,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
   }
   return true;
+}
+
+void keyboard_post_init_user(void) {
+  // Customise these values to desired behaviour
+  debug_enable=true;
+  debug_matrix=true;
+  //debug_keyboard=true;
+  //debug_mouse=true;
+  while (rgblight_get_val() >= 60) {
+    rgblight_decrease_val_noeeprom();
+  }
+  // rgblight_sethsv_noeeprom(0, 0, 60);
 }
