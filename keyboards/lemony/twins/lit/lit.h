@@ -16,7 +16,7 @@
 #pragma once
 
 #include "quantum.h"
-#include "split_util.h"
+// #include "split_util.h"
 
 #define LAYOUT_twins( \
     L00, L01, L02, L03, L04, L05,                R00, R01, R02, R03, R04, R05,\
