@@ -22,7 +22,8 @@
 // #define MATRIX_COL_PINS { B3, D4, C6, D7, E6, B4, B5 } //left-right
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4, B3 } //left-right
 #define MATRIX_ROW_PINS_RIGHT { F4, D3, B1, F7 } //top-bot
-#define MATRIX_COL_PINS_RIGHT {  B3, D4, C6, D7, E6, B4, B5 } //left-right
+#define MATRIX_COL_PINS_RIGHT {  B5, B4, E6, D7, C6, D4, B3 } //left-right
+// #define MATRIX_COL_PINS_RIGHT {  B3, D4, C6, D7, E6, B4, B5 } //left-right
 
 #define ENCODERS_PAD_A { B2 }
 #define ENCODERS_PAD_B { B6 }
@@ -64,7 +65,8 @@
   // #define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
   #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
   // #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_CROSS// Sets the default mode, if none has been set
-  #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_CROSS// Sets the default mode, if none has been set
+  // #define RGB_SPLIT_MASTER
+  #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP// Sets the default mode, if none has been set
   // #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
   // #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
   #define RGB_MATRIX_STARTUP_VAL 60 // Sets the default brightness value, if none has been set
