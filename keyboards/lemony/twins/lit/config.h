@@ -39,14 +39,11 @@
 #define USE_SERIAL
 
 #ifdef RGB_MATRIX_ENABLE
+  // #define RGB_SPLIT_MASTER
   /* LED */
   // The pin connected to the data pin of the LEDs
-  // #define RGBLIGHT_SPLIT
+  #define RGBLIGHT_SPLIT
   #define RGB_DI_PIN F5
-  // The number of LEDs connected
-  // #define DRIVER_LED_TOTAL 50
-  // #define RGBLED_NUM 25    // Number of LEDs (each hand)
-  // #define RGBLIGHT_SPLIT
   #define RGBLIGHT_LIMIT_VAL 120
   #define RGB_MATRIX_MAXIMUM_BRIGHTNESS RGBLIGHT_LIMIT_VAL // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
   #define RGBLED_NUM_LEFT   25
@@ -65,8 +62,7 @@
   // #define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
   #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
   // #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_CROSS// Sets the default mode, if none has been set
-  // #define RGB_SPLIT_MASTER
-  #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP// Sets the default mode, if none has been set
+  #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS// Sets the default mode, if none has been set
   // #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
   // #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
   #define RGB_MATRIX_STARTUP_VAL 60 // Sets the default brightness value, if none has been set
@@ -94,8 +90,8 @@
   #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
   // #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
   #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS
-  #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS
-  #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS
+  // #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS
+  // #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS
   #define DISABLE_RGB_MATRIX_SPLASH
   #define DISABLE_RGB_MATRIX_MULTISPLASH
   #define DISABLE_RGB_MATRIX_SOLID_SPLASH
