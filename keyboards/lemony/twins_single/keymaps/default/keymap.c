@@ -34,17 +34,17 @@ int OS = 0; // 0 = mac, 1 = win
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_DEFAULT] = LAYOUT_twins_single(
-    KC_ESC , KC_DEL , KC_7   , KC_8   , KC_9   , KC_PSLS,
-    _______, _______, KC_4   , KC_5   , KC_6   , KC_PAST,
-    SCRNCPY, _______, KC_1   , KC_2   , KC_3   , KC_PMNS, ENC_L  ,
-    SYMBOL , RECT   , KC_0   , KC_DOT , KC_BSPC, KC_PPLS, KC_PEQL
+    KC_ESC , KC_7   , KC_8   , KC_9   , KC_PSLS, KC_BSPC,
+    _______, KC_4   , KC_5   , KC_6   , KC_PAST, KC_DEL ,
+    SCRNCPY, KC_1   , KC_2   , KC_3   , KC_PMNS, KC_TAB , ENC_L  ,
+    SYMBOL , KC_0   , KC_0   , KC_DOT , KC_PPLS, KC_PEQL, KC_ENT
   ),
 
   [_SYMBOL] = LAYOUT_twins_single(
-    _______, _______, KC_AMPR, KC_ASTR, _______, _______,
-    _______, _______, KC_DLR , KC_PERC, KC_CIRC, _______,
-    _______, _______, KC_EXLM, KC_AT  , KC_HASH, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______
+    _______, KC_AMPR, KC_ASTR, _______, _______, _______,
+    _______, KC_DLR , KC_PERC, KC_CIRC, _______, _______,
+    _______, KC_EXLM, KC_AT  , KC_HASH, _______, _______, _______,
+    _______, _______, _______, _______, _______, _______, KC_PEQL
   ),
 
   [_RECT] = LAYOUT_twins_single(
