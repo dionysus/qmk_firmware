@@ -14,5 +14,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
-#include "layout.h"
-#include "quantum.h"
+
+#undef TAPPING_TERM
+#define TAPPING_TERM 190
+
+#define MUSIC_MASK (keycode != KC_NO)
+#define MIDI_ADVANCED
