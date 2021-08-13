@@ -22,13 +22,13 @@
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4, B3 } //left-right
 
 // Encoders
-#define ENCODERS_PAD_A { B2 }
-#define ENCODERS_PAD_B { B6 }
-#define ENCODER_RESOLUTION 4
+// #define ENCODERS_PAD_A { B2 }
+// #define ENCODERS_PAD_B { B6 }
+// #define ENCODER_RESOLUTION 4
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
-#define SOFT_SERIAL_PIN D2
+// #define SOFT_SERIAL_PIN D2
 
 /* SPLIT */
-#define USE_SERIAL
+// #define USE_SERIAL
