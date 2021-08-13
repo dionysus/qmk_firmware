@@ -5,6 +5,7 @@ MCU = atmega32u4
 #   Pro Micro    caterina
 BOOTLOADER = caterina
 OLED_DRIVER_ENABLE = no
+BOOTMAGIC_ENABLE = full
 # Build Options
 # BOOTMAGIC_ENABLE  = yes	# Virtual DIP switch configuration
 # MOUSEKEY_ENABLE  = no	# Mouse keys
