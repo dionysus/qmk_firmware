@@ -17,6 +17,8 @@
 #pragma once
 #include "config_common.h"
 
+#define PRODUCT_ID      0x0002 // TWINS
+
 /* MITTENS pro-micro default pinout */
 #define MATRIX_ROW_PINS { F4, D3, B1, F7 } //top-bot
 // #define MATRIX_COL_PINS { B3, D4, C6, D7, E6, B4, B5 } //left-right
@@ -49,10 +51,11 @@
   #define RGBLED_NUM_LEFT   25
   #define RGBLED_NUM_RIGHT  25
   #undef  RGBLED_NUM
-  #define RGBLED_NUM        (RGBLED_NUM_LEFT+RGBLED_NUM_RIGHT)
+  #define RGBLED_NUM        ( RGBLED_NUM_LEFT + RGBLED_NUM_RIGHT )
   #define RGBLED_SPLIT      { RGBLED_NUM_LEFT, RGBLED_NUM_RIGHT }
-  #define RGB_MATRIX_SPLIT RGBLED_SPLIT
+  #define RGB_MATRIX_SPLIT  RGBLED_SPLIT
   #define DRIVER_LED_TOTAL  RGBLED_NUM
+
   #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
   // #define RGBLIGHT_ANIMATIONS
   #define RGB_MATRIX_KEYPRESSES // reacts to keypresses
@@ -62,7 +65,7 @@
   // #define RGB_MATRIX_LED_PROCESS_LIMIT (DRIVER_LED_TOTAL + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
   #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
   // #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_REACTIVE_CROSS// Sets the default mode, if none has been set
-  #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP// Sets the default mode, if none has been set
+  // #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_TYPING_HEATMAP// Sets the default mode, if none has been set
   // #define RGB_MATRIX_STARTUP_HUE 0 // Sets the default hue value, if none has been set
   // #define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
   #define RGB_MATRIX_STARTUP_VAL 60 // Sets the default brightness value, if none has been set

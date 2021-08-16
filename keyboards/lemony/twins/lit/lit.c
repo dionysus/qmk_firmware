@@ -1,4 +1,4 @@
-#include "lit.h"
+#include "layout.h"
 
 #ifdef RGB_MATRIX_ENABLE
 
