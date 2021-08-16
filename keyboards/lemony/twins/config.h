@@ -18,7 +18,6 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x4c59 // LEMONY
-#define PRODUCT_ID      0x5457 // TWINS
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    lemony.org
 #define PRODUCT         TWINS
