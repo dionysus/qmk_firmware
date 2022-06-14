@@ -36,28 +36,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
 };
 
-#ifdef ENCODER_ENABLE
-void encoder_update_user(uint8_t index, bool clockwise) {
-	switch (get_highest_layer(layer_state)) {
-		case _DEFAULT:
-			if (index == 0) {
-				(clockwise) ? tap_code(KC_DOWN) : tap_code(KC_UP);
-			}
-			if (index == 1) {
-				(clockwise) ? tap_code(KC__VOLUP) : tap_code(KC__VOLDOWN);
-			}
-			break;
+// #ifdef ENCODER_ENABLE
+// void encoder_update_user(uint8_t index, bool clockwise) {
+// 	switch (get_highest_layer(layer_state)) {
+// 		case _DEFAULT:
+// 			if (index == 0) {
+// 				(clockwise) ? tap_code(KC_DOWN) : tap_code(KC_UP);
+// 			}
+// 			if (index == 1) {
+// 				(clockwise) ? tap_code(KC__VOLUP) : tap_code(KC__VOLDOWN);
+// 			}
+// 			break;
 
-		case _SYMBOL:
-			if (index == 0) {
-				(clockwise) ? tap_code(KC_PGDN) : tap_code(KC_PGUP);
-			}
-			break;
-			// if (index == 1) {
-			// 	(clockwise) ? tap_code(KC_DOWN) : tap_code(KC_UP);
-			// }
-		default:
-			break;
-	};
-}
-#endif
+// 		case _SYMBOL:
+// 			if (index == 0) {
+// 				(clockwise) ? tap_code(KC_PGDN) : tap_code(KC_PGUP);
+// 			}
+// 			break;
+// 			// if (index == 1) {
+// 			// 	(clockwise) ? tap_code(KC_DOWN) : tap_code(KC_UP);
+// 			// }
+// 		default:
+// 			break;
+// 	};
+// }
+// #endif

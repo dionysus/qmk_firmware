@@ -16,6 +16,7 @@
 
 #pragma once
 #include "config_common.h"
+#define PRODUCT_ID      0x0002 // TWINS
 
 /* MITTENS pro-micro default pinout */
 #define MATRIX_ROW_PINS { D4, F4, F7, B2 } //top-bot
@@ -23,11 +24,11 @@
 #define MATRIX_ROW_PINS_RIGHT { D3, F6, B3, B6 } //top-bot
 #define MATRIX_COL_PINS_RIGHT { B2, B1, F7, F5, F4, C6, D7} //left-right
 
-#define ENCODERS_PAD_A { B5 }
-#define ENCODERS_PAD_B { B4 }
-#define ENCODERS_PAD_A_RIGHT { B5 }
-#define ENCODERS_PAD_B_RIGHT { B4 }
-#define ENCODER_RESOLUTION 4
+// #define ENCODERS_PAD_A { B5 }
+// #define ENCODERS_PAD_B { B4 }
+// #define ENCODERS_PAD_A_RIGHT { B5 }
+// #define ENCODERS_PAD_B_RIGHT { B4 }
+// #define ENCODER_RESOLUTION 4
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
