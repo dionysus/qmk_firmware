@@ -7,7 +7,7 @@ Hardware Availability: [lemony.org](http://lemony.org)
 
 Make example for this keyboard (after setting up your build environment):
 
-    make lemony/mittens/feather:default
+    make lemony/mittens/promicro:via
 
 This compiles the qmk firmware for the MITTENS board with the Feather microcontroller, exporting the default keymap.
 
