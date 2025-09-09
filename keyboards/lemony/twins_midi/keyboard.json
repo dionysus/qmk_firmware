@@ -6,13 +6,13 @@
   "manufacturer": "lemony",
   "processor": "atmega32u4",
   "bootloader": "caterina",
-  "width": 14,
+  "width": 7,
   "height": 4,
   "usb": {
     "device_version": "1.0.0",
     "force_nkro": true,
     "pid": "0x0001",
-    "vid": "0x6C75"
+    "vid": "0x4C59"
   },
   "features": {
     "bootmagic": true,
@@ -27,7 +27,7 @@
       "D7",
       "C6",
       "D4",
-      "B3",
+      "B3"
     ],
     "rows": [
       "F4",
