@@ -1,5 +1,5 @@
 {
-  "keyboard_name": "twins_rev10_led",
+  "keyboard_name": "twins_0001",
   "keyboard_folder": "twins",
   "url": "http://www.lemony.org",
   "maintainer": "lemony",
@@ -9,14 +9,13 @@
   "width": 14,
   "height": 4,
   "usb": {
-    "device_version": "1.0.0",
+    "device_version": "0.0.1",
     "force_nkro": true,
-    "pid": "0x0001", 
+    "pid": "0x0101", 
     "vid": "0x4C59"
   },
   "features": {
-    "bootmagic": true,
-    "rgb_matrix": true
+    "bootmagic": true
   },
     "split": {
       "enabled": true,

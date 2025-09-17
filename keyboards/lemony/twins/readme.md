@@ -4,7 +4,7 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    qmk compile -kb lemony/twins -km via
+    qmk compile -kb lemony/twins/rev_0100 -km via
 
 This compiles the qmk firmware for the TWINS_mini board with the ProMicro microcontroller, exporting the default keymap.
 
