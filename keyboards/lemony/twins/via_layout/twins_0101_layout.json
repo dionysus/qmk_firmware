@@ -236,5 +236,12 @@
       "KC_TRNS"
     ]
   ],
-  "encoders": []
+  "encoders": [
+    [
+      ["C(KC_Z)", "C(KC_Y)"],
+      ["KC_NO", "KC_NO"],
+      ["KC_NO", "KC_NO"],
+      ["KC_NO", "KC_NO"]
+    ]
+  ]
 }
